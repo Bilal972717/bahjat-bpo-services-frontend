@@ -1362,7 +1362,7 @@
         gsap.registerPlugin(ScrollTrigger);
         
         // Initialize Stripe with your publishable key
-        const stripe = Stripe('pk_test_51ST4UF40HwZJ2DP8NQG4YVplJ1IFLaGljQeT2XbxO8WPJJXQSact4mjkXHM7sIOLAPACTK9kZ1jEI1Vhk64ugGSO00hLojOIcU');
+        const stripe = Stripe('pk_live_51T9x44KYtctRAPV5XfQuSestr0fnvj8BLgEXdeWzPNfzdeldlVLzwv8Wc6HsrwbzGh3j34GMFZFyYs096lguZfAf00GlILBMFr');
         
         document.addEventListener('DOMContentLoaded', function() {
             // Header scroll effect
@@ -1617,7 +1617,7 @@ async function createCheckoutSession(price) {
   try {
     console.log('Sending request to API with price:', price);
     
-    const response = await fetch('https://core-tech-bpo-backend.vercel.app/create-checkout-session', {
+    const response = await fetch('https://bahjat-bpo-services-backend.vercel.app/create-checkout-session', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
